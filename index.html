@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./logo.png">
+</head>
+<body>
+
+    <select id="country1" onchange="calculateCurrency()"></select>
+    
+    <input type="number" name="fromAmount" id="fromAmount" oninput="calculatedRate1()"><br><br>
+
+    <select id="country2" onchange="calculateCurrency()"></select>
+
+    <input type="number" name="toAmount" id="toAmount" oninput="calculatedRate2()"><br>
+
+    <h2 id="currencyRate"></h2>
+
+
+    <button onclick="swapCurrency()">Swap</button>
+
+
+</body>
+
+<script src="./script.js">
+</script>
+
+</html>
